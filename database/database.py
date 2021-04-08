@@ -5,7 +5,7 @@ from starlette.requests import Request
 
 from config import Config
 
-утпшту = create_engine(Config.URL_DB)
+engine = create_engine(Config.URL_DB)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 Base = declarative_base()
